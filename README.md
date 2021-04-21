@@ -1,5 +1,8 @@
 # A Lattice Boltzmann implementation in F#
 
+    cd src
+    dotnet run
+
 [LBM.fs](src/LBM.fs) implements the core logic of the method (the
 maths, algorithm, and datatypes). It is short and fully commented,
 one should be able to understand the gist of the Lattice Boltzmann method
