@@ -23,7 +23,7 @@ let inside (x, y) cells = y > 0 && y < (Array.length cells) - 1 &&
                           x > 0 && x < (Array.length (cells.[y])) - 1
 
 (* Core Logic *)
-// each cell will use these 9 directions (top, top-right, right... + center) to spread its accordingly.
+// each cell will use these 9 directions (top, top-right, right... + center) to spread its fluid particles accordingly.
 // cell.[1] represents the upward (V2 0. 1.) moving part of its fluid particles, and will thus use direction.[1], etc.
 let directions = [| V2 0. 0. ; V2 0. 1. ; V2 1. 1. ; V2 1. 0. ; V2 1. -1. ; V2 0. -1. ; V2 -1. -1. ; V2 -1. 0. ; V2 -1. 1. |]
 
