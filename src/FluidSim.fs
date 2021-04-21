@@ -109,8 +109,8 @@ let main argv =
     let obstacles = bmp //(snd evolved_design).[0]
 
     // save the evolved design of the bike
-    Array.iteri (fun y c -> Array.iteri (fun x b -> bike.SetPixel(x, y, if b then System.Drawing.Color.RoyalBlue else System.Drawing.Color.White)) c ) obstacles
-    bike.Save "newBike.bmp"
+    // Array.iteri (fun y c -> Array.iteri (fun x b -> bike.SetPixel(x, y, if b then System.Drawing.Color.RoyalBlue else System.Drawing.Color.White)) c ) obstacles
+    // bike.Save "newBike.bmp"
  
 
     while not (Raylib.WindowShouldClose ()) do
